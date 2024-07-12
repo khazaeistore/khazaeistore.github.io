@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "خشکبار",
+        "image": "/assets/img/products/badam.jpg"
+    },
+    {
+        "id": 2,
+        "name": "آجیل",
+        "image": "/assets/img/products/badam.jpg"
+    }
+    ,
+    {
+        "id": 3,
+        "name": "برنج",
+        "image": "/assets/img/categories/bereng.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "کشمش",
+        "image": "/assets/img/products/badam.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "کشمش",
+        "image": "/assets/img/products/badam.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "کشمش",
+        "image": "/assets/img/products/badam.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "کشمش",
+        "image": "/assets/img/products/badam.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "کشمش",
+        "image": "/assets/img/products/badam.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "کشمش",
+        "image": "/assets/img/products/badam.jpg"
+    }
+]

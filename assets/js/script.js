@@ -1,3 +1,8 @@
+// GSAP animation
+gsap.from("header", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+gsap.from("#hero", { duration: 1, x: -100, opacity: 0, delay: 0.5, ease: "power2.out" });
+gsap.from("#categories-container", { duration: 1, x: 100, opacity: 0, delay: 1, ease: "power2.out" });
+
 const themeToggle = document.getElementById("theme-toggle");
 const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
 
@@ -7,6 +12,7 @@ const toggleTheme = () => {
     "theme",
     document.body.classList.contains("dark") ? "dark" : "light"
   );
+  gsap.to(document.body, { backgroundColor: document.body.classList.contains("dark") ? "#1a202c" : "#f7fafc", duration: 0.5 });
 };
 
 themeToggle.addEventListener("click", toggleTheme);
@@ -18,28 +24,16 @@ if (localStorage.getItem("theme") === "dark") {
   document.body.classList.remove("dark");
 }
 
-const languageToggle = document.getElementById("language-toggle");
-const languageDropdown = document.getElementById("language-dropdown");
-const mobileLanguageToggle = document.getElementById("mobile-language-toggle");
-const mobileLanguageDropdown = document.getElementById(
-  "mobile-language-dropdown"
-);
-
-const toggleLanguageMenu = () => {
-  languageDropdown.classList.toggle("hidden");
-};
-languageToggle.addEventListener("click", toggleLanguageMenu);
-mobileLanguageToggle.addEventListener("click", toggleLanguageMenu);
-
 const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 
 const toggleMobileMenu = () => {
   mobileMenu.classList.toggle("hidden");
+  gsap.fromTo(mobileMenu, { opacity: 0 }, { opacity: 1, duration: 0.5 });
 };
 menuToggle.addEventListener("click", toggleMobileMenu);
 
-fetch("/assets/data/category.json")
+fetch("/assets/data/categories.json")
   .then((response) => response.json())
   .then((categories) => {
     const categoriesContainer = document.getElementById("categories");
@@ -54,12 +48,14 @@ fetch("/assets/data/category.json")
         "rounded",
         "transition",
         "transform",
-        "hover:scale-105"
+        "hover:scale-105",
+        "category-item",
+        "animated"
       );
       categoryDiv.innerHTML = `
-                <img src="${category.image}" class="w-16 h-16 rounded-full mx-auto">
-                <p class="mt-2 text-gray-800 dark:text-white">${category.name}</p>
-            `;
+        <img src="${category.image}" class="w-16 h-16 rounded-full mx-auto">
+        <p class="mt-2 text-gray-800 dark:text-white">${category.name} 📦</p>
+      `;
       categoryDiv.addEventListener("click", () => {
         loadProductsByCategory(category.id);
       });
@@ -72,7 +68,7 @@ fetch("/assets/data/category.json")
   });
 
 function loadProductsByCategory(categoryId) {
-  fetch("/assets/data/product.json")
+  fetch("/assets/data/products.json")
     .then((response) => response.json())
     .then((products) => {
       const productList = document.getElementById("product-list");
@@ -92,7 +88,8 @@ function loadProductsByCategory(categoryId) {
             "transform",
             "hover:scale-105",
             "text-gray-800",
-            "dark:text-white"
+            "dark:text-white",
+            "animated"
           );
 
           const productImage = document.createElement("img");
@@ -137,15 +134,35 @@ function loadProductsByCategory(categoryId) {
 
 function updateDateTime() {
   const now = new Date();
-  const dateTime = now.toLocaleString("fa-IR", {
-    dateStyle: "full",
-    timeStyle: "short",
-  });
+
+  const weekdayOptions = { weekday: "long" };
+  const weekday = now.toLocaleDateString("fa-IR", weekdayOptions);
+
+  const day = now.getDate();
+  const monthOptions = { month: "long" };
+  const month = now.toLocaleDateString("fa-IR", monthOptions);
+  const year = now.toLocaleDateString("fa-IR", { year: "numeric" }).split(' ')[0];
+
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+
+  const formattedHours = hours.toString();
+  const formattedMinutes = minutes.toString().padStart(2, '0');
+  const formattedSeconds = seconds.toString().padStart(2, '0');
+
+  function convertToPersianDigits(str) {
+    const persianDigits = '۰۱۲۳۴۵۶۷۸۹';
+    return str.replace(/\d/g, (digit) => persianDigits[digit]);
+  }
+
+  const dateTime = `${weekday} ${convertToPersianDigits(day.toString())} ${month} ${convertToPersianDigits(year)} ساعت ${convertToPersianDigits(formattedHours)}:${convertToPersianDigits(formattedMinutes)}:${convertToPersianDigits(formattedSeconds)}`;
+
   document.getElementById("date-time").textContent = dateTime;
 }
 
-setInterval(updateDateTime, 1000);
 updateDateTime();
+setInterval(updateDateTime, 1000);
 
 const searchInput = document.getElementById("search-input");
 const searchResults = document.getElementById("search-results");
@@ -155,7 +172,7 @@ const closeSearchResults = document.getElementById("close-search-results");
 searchInput.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
     const query = searchInput.value.toLowerCase();
-    fetch("/assets/data/product.json")
+    fetch("/assets/data/products.json")
       .then((response) => response.json())
       .then((products) => {
         searchResultsContent.innerHTML = "";
@@ -177,20 +194,22 @@ searchInput.addEventListener("keypress", function (e) {
               "transform",
               "hover:scale-105",
               "text-gray-800",
-              "dark:text-white"
+              "dark:text-white",
+              "animated"
             );
             productCard.innerHTML = `
-                            <img src="${product.image}" class="w-full h-48 object-cover rounded-lg">
-                            <h3 class="text-xl font-bold mt-4 text-gray-800 dark:text-white">${product.title}</h3>
-                            <p class="mt-2 text-gray-800 dark:text-white">${product.description}</p>
-                            <p class="mt-2 text-green-500 font-bold">${product.price} تومان</p>
-                        `;
+              <img src="${product.image}" class="w-full h-48 object-cover rounded-lg">
+              <h3 class="text-xl font-bold mt-4 text-gray-800 dark:text-white">${product.title}</h3>
+              <p class="mt-2 text-gray-800 dark:text-white">${product.description}</p>
+              <p class="mt-2 text-green-500 font-bold">${product.price} تومان</p>
+            `;
             searchResultsContent.appendChild(productCard);
           });
           searchResults.classList.remove("hidden");
+          gsap.from("#search-results", { duration: 1, y: 50, opacity: 0, ease: "power2.out" });
         } else {
           searchResultsContent.innerHTML =
-            '<p class="text-center text-gray-800 dark:text-white">محصولی یافت نشد.</p>';
+            '<p class="text-center text-gray-800 dark:text-white">محصولی یافت نشد. 😔</p>';
           searchResults.classList.remove("hidden");
         }
       });
