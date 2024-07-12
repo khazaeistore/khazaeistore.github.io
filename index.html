@@ -1,19 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فروشگاه خزائی</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body>
-    <div class="text-center">
-        <img class="logo" src="/assets/img/khazaeistore-logo.png">
-        <h1>به فروشگاه خزائی خوش آمدید</h1>
-    </div>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-vazir overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-thumb-rounded-lg scrollbar-track-gray-300 dark:scrollbar-thumb-gray-700 dark:scrollbar-track-gray-800">
+
+    <header class="bg-white dark:bg-gray-800 shadow p-4 flex justify-between items-center relative">
+        <div class="flex items-center">
+            <img src="assets/img/khazaeistore-logo.png" alt="Logo" class="h-10 ml-4">
+            <h1 class="text-2xl font-bold text-gray-800 dark:text-white">فروشگاه خزائی</h1>
+        </div>
+        <input id="search-input" type="text" placeholder="جستجو..." class="p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 ml-4 outline-none border border-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 transition">
+        <nav class="hidden md:flex items-center space-x-4 space-x-reverse">
+            <a href="#" class="hover:underline text-gray-800 dark:text-white">تماس با ما</a>
+            <a href="#" class="hover:underline text-gray-800 dark:text-white">درباره ما</a>
+            <a href="#" class="hover:underline text-gray-800 dark:text-white">محصولات</a>
+            <div class="relative">
+                <button id="language-toggle" class="p-2 rounded bg-gray-300 dark:bg-gray-700  text-gray-800 dark:text-white"">تغییر زبان</button>
+                <div id="language-dropdown" class="hidden absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded shadow-lg">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white">فارسی</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white">عربی</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white">English</a>
+                </div>
+            </div>
+            <button id="theme-toggle" class="bg-gray-300 dark:bg-gray-700 p-2 rounded  text-gray-800 dark:text-white"">تغییر تم</button>
+        </nav>
+        <button id="menu-toggle" class="md:hidden p-2 rounded bg-gray-300 dark:bg-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </header>
+
+    <nav id="mobile-menu" class="md:hidden hidden flex-col space-y-2 p-4 bg-gray-200 dark:bg-gray-700">
+        <a href="#" class="hover:underline text-gray-800 dark:text-white">تماس با ما</a>
+        <a href="#" class="hover:underline text-gray-800 dark:text-white">درباره ما</a>
+        <a href="#" class="hover:underline text-gray-800 dark:text-white">محصولات</a>
+        <div class="relative">
+            <button id="mobile-language-toggle" class="p-2 rounded bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white">تغییر زبان</button>
+            <div id="mobile-language-dropdown" class="hidden absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white">فارسی</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-800 dark:text-white">English</a>
+            </div>
+        </div>
+        <button id="mobile-theme-toggle" class="bg-gray-300 dark:bg-gray-700 p-2 rounded text-gray-800 dark:text-white">تغییر تم</button>
+    </nav>
+
+    <main class="p-8">
+        <section id="hero" class="bg-gray-200 dark:bg-gray-700 p-8 rounded-lg mb-8">
+            <h2 class="text-3xl font-bold mb-4 text-center text-gray-800 dark:text-white">به فروشگاه خشکبار خزائی خوش آمدید!</h2>
+            <div id="categories" class="flex justify-center space-x-4 space-x-reverse"></div>
+        </section>
+        <section id="search-results" class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-8 hidden">
+            <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">نتایج جستجو</h3>
+            <button id="close-search-results" class="bg-red-500 dark:bg-red-700 text-white p-2 rounded mb-4">بستن</button>
+            <div id="search-results-content"></div>
+        </section>
+        <section id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></section>
+        <section id="date-time-section" class="bg-gray-200 dark:bg-gray-700 p-8 rounded-lg mt-8">
+            <div id="date-time" class="text-center text-xl font-bold text-gray-800 dark:text-white"></div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-800 text-gray-800 dark:text-white shadow p-4 text-center mt-8">
+        <p>&copy; 2024 فروشگاه خشکبار خزایی</p>
+    </footer>
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
