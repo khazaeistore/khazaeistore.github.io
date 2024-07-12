@@ -1,22 +1,29 @@
-// GSAP animation
-gsap.from("header", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
-gsap.from("#hero", { duration: 1, x: -100, opacity: 0, delay: 0.5, ease: "power2.out" });
-gsap.from("#categories-container", { duration: 1, x: 100, opacity: 0, delay: 1, ease: "power2.out" });
+const timeline = gsap.timeline({
+  onComplete: () => {
+    document.body.classList.remove("hide-scrollbar");
+  }
+});
 
-const themeToggle = document.getElementById("theme-toggle");
-const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
+timeline
+  .from("header", { duration: 1, y: -100, opacity: 0, ease: "bounce" })
+  .from("#hero", { duration: 1, x: -100, opacity: 0, delay: 0.1, ease: "power2.out" })
+  .from("#categories-container", { duration: 1, x: 100, opacity: 0, delay: 0.2, ease: "power2.out" });
 
-const toggleTheme = () => {
-  document.body.classList.toggle("dark");
-  localStorage.setItem(
-    "theme",
-    document.body.classList.contains("dark") ? "dark" : "light"
-  );
-  gsap.to(document.body, { backgroundColor: document.body.classList.contains("dark") ? "#1a202c" : "#f7fafc", duration: 0.5 });
-};
 
-themeToggle.addEventListener("click", toggleTheme);
-mobileThemeToggle.addEventListener("click", toggleTheme);
+// const themeToggle = document.getElementById("theme-toggle");
+// const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
+
+// const toggleTheme = () => {
+//   document.body.classList.toggle("dark");
+//   localStorage.setItem(
+//     "theme",
+//     document.body.classList.contains("dark") ? "dark" : "light"
+//   );
+//   gsap.to(document.body, { backgroundColor: document.body.classList.contains("dark") ? "#1a202c" : "#f7fafc", duration: 0.5 });
+// };
+
+// themeToggle.addEventListener("click", toggleTheme);
+// mobileThemeToggle.addEventListener("click", toggleTheme);
 
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
@@ -50,11 +57,12 @@ fetch("/assets/data/categories.json")
         "transform",
         "hover:scale-105",
         "category-item",
-        "animated"
+        "animated",
+        "dark:text-white",
       );
       categoryDiv.innerHTML = `
         <img src="${category.image}" class="w-16 h-16 rounded-full mx-auto">
-        <p class="mt-2 text-gray-800 dark:text-white">${category.name} 📦</p>
+        <p class="mt-2 text-gray-800 dark:text-white">${category.name}</p>
       `;
       categoryDiv.addEventListener("click", () => {
         loadProductsByCategory(category.id);

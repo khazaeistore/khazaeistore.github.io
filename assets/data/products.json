@@ -36,5 +36,196 @@
         "description": "بادام مرغوب",
         "price": 150000,
         "quantity": 100
+    },
+    {
+        "id": 1,
+        "category_id": 1,
+        "image": "/assets/img/products/peste.jpg",
+        "title": "پسته",
+        "description": "پسته تازه و خوشمزه",
+        "price": 200000,
+        "quantity": 50
+    },
+    {
+        "id": 2,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 3,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 4,
+        "category_id": 4,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    },
+    {
+        "id": 1,
+        "category_id": 1,
+        "image": "/assets/img/products/peste.jpg",
+        "title": "پسته",
+        "description": "پسته تازه و خوشمزه",
+        "price": 200000,
+        "quantity": 50
+    },
+    {
+        "id": 2,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 3,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 4,
+        "category_id": 4,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 1,
+        "category_id": 1,
+        "image": "/assets/img/products/peste.jpg",
+        "title": "پسته",
+        "description": "پسته تازه و خوشمزه",
+        "price": 200000,
+        "quantity": 50
+    },
+    {
+        "id": 2,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 3,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 4,
+        "category_id": 4,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    },
+    {
+        "id": 1,
+        "category_id": 1,
+        "image": "/assets/img/products/peste.jpg",
+        "title": "پسته",
+        "description": "پسته تازه و خوشمزه",
+        "price": 200000,
+        "quantity": 50
+    },
+    {
+        "id": 2,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 3,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 4,
+        "category_id": 4,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    },
+    {
+        "id": 1,
+        "category_id": 1,
+        "image": "/assets/img/products/peste.jpg",
+        "title": "پسته",
+        "description": "پسته تازه و خوشمزه",
+        "price": 200000,
+        "quantity": 50
+    },
+    {
+        "id": 2,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 3,
+        "category_id": 2,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "بادام",
+        "description": "بادام مرغوب",
+        "price": 150000,
+        "quantity": 100
+    }
+    ,
+    {
+        "id": 4,
+        "category_id": 3,
+        "image": "/assets/img/products/badam.jpg",
+        "title": "برنج طارم",
+        "description": "برنج مرغوب",
+        "price": 150000,
+        "quantity": 100
     }
 ]

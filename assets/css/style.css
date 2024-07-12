@@ -963,11 +963,6 @@ select {
   line-height: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1105,21 +1100,24 @@ body {
   background-color: #f3f4f6;
 }
 
-/* Ensure the container allows horizontal scrolling */
-
 .categories-container {
   display: flex;
-  justify-content: center;
+  text-align: center;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  /* Enable smooth scrolling on iOS */
-  scrollbar-width: none;
-  /* Hide scrollbar in Firefox */
 }
 
 .categories-container::-webkit-scrollbar {
-  display: none;
-  /* Hide scrollbar in WebKit browsers */
+  height: 5px;
+}
+
+.categories-container::-webkit-scrollbar-thumb {
+  background-color: #6b7280;
+  border-radius: 10px;
+}
+
+.categories-container::-webkit-scrollbar-track {
+  background-color: #f3f4f6;
 }
 
 /* Style the category items */
@@ -1127,11 +1125,8 @@ body {
 .category-item {
   flex: 0 0 auto;
   padding: 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   text-align: center;
-  margin: 5px;
+  margin: 10px;
   white-space: nowrap;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -1140,8 +1135,6 @@ body {
 .category-item:hover {
   transform: scale(1.05);
 }
-
-/* General styles for animations */
 
 @keyframes fadeIn {
   from {
@@ -1155,6 +1148,10 @@ body {
 
 .animated {
   animation: fadeIn 1s ease-in-out;
+}
+
+.hide-scrollbar {
+  overflow: hidden;
 }
 
 .hover\:scale-105:hover {
@@ -1220,6 +1217,13 @@ body {
   border-color: rgb(96 165 250 / var(--tw-border-opacity));
 }
 
+@media (min-width: 640px) {
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
@@ -1240,6 +1244,11 @@ body {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1249,5 +1258,17 @@ body {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
