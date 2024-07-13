@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "خشکبار",
+        "image": "/assets/img/categories/dried_fruits.jpg"
+    },
+    {
+        "id": 2,
+        "name": "آجیل",
+        "image": "/assets/img/categories/nuts.jpg"
+    },
+    {
+        "id": 3,
+        "name": "برنج",
+        "image": "/assets/img/categories/rice.jpg"
+    },
+    {
+        "id": 4,
+        "name": "کشمش",
+        "image": "/assets/img/categories/raisins.jpg"
+    },
+    {
+        "id": 5,
+        "name": "پسته",
+        "image": "/assets/img/categories/pistachios.jpg"
+    },
+    {
+        "id": 6,
+        "name": "بادام",
+        "image": "/assets/img/categories/almonds.jpg"
+    },
+    {
+        "id": 7,
+        "name": "گردو",
+        "image": "/assets/img/categories/walnuts.jpg"
+    },
+    {
+        "id": 8,
+        "name": "فندق",
+        "image": "/assets/img/categories/hazelnuts.jpg"
+    },
+    {
+        "id": 9,
+        "name": "کنجد",
+        "image": "/assets/img/categories/sesame.jpg"
+    },
+    {
+        "id": 10,
+        "name": "آرد بادام",
+        "image": "/assets/img/categories/almond_flour.jpg"
+    },
+    {
+        "id": 11,
+        "name": "آجیل مخلوط",
+        "image": "/assets/img/categories/mixed_nuts.jpg"
+    },
+    {
+        "id": 12,
+        "name": "شیره خرما",
+        "image": "/assets/img/categories/date_syrup.jpg"
+    },
+    {
+        "id": 13,
+        "name": "پودر کاکائو",
+        "image": "/assets/img/categories/cocoa_powder.jpg"
+    },
+    {
+        "id": 14,
+        "name": "روغن کنجد",
+        "image": "/assets/img/categories/sesame_oil.jpg"
+    },
+    {
+        "id": 15,
+        "name": "روغن زیتون",
+        "image": "/assets/img/categories/olive_oil.jpg"
+    },
+    {
+        "id": 16,
+        "name": "روغن بادام",
+        "image": "/assets/img/categories/almond_oil.jpg"
+    },
+    {
+        "id": 17,
+        "name": "شیرین کننده‌ها",
+        "image": "/assets/img/categories/sweeteners.jpg"
+    },
+    {
+        "id": 18,
+        "name": "ادویه‌ها",
+        "image": "/assets/img/categories/spices.jpg"
+    },
+    {
+        "id": 19,
+        "name": "مرباها",
+        "image": "/assets/img/categories/jams.jpg"
+    },
+    {
+        "id": 20,
+        "name": "چای و دمنوش",
+        "image": "/assets/img/categories/tea_and_herbal.jpg"
+    }
+]
