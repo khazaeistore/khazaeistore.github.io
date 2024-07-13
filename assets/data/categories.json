@@ -2,101 +2,101 @@
     {
         "id": 1,
         "name": "خشکبار",
-        "image": "/assets/img/categories/dried_fruits.jpg"
+        "image": "/assets/img/categories/dried_fruits.png"
     },
     {
         "id": 2,
         "name": "آجیل",
-        "image": "/assets/img/categories/nuts.jpg"
+        "image": "/assets/img/categories/nuts.png"
     },
     {
         "id": 3,
         "name": "برنج",
-        "image": "/assets/img/categories/rice.jpg"
+        "image": "/assets/img/categories/rice.png"
     },
     {
         "id": 4,
         "name": "کشمش",
-        "image": "/assets/img/categories/raisins.jpg"
+        "image": "/assets/img/categories/raisins.png"
     },
     {
         "id": 5,
         "name": "پسته",
-        "image": "/assets/img/categories/pistachios.jpg"
+        "image": "/assets/img/categories/pistachios.png"
     },
     {
         "id": 6,
         "name": "بادام",
-        "image": "/assets/img/categories/almonds.jpg"
+        "image": "/assets/img/categories/almonds.png"
     },
     {
         "id": 7,
         "name": "گردو",
-        "image": "/assets/img/categories/walnuts.jpg"
+        "image": "/assets/img/categories/walnuts.png"
     },
     {
         "id": 8,
         "name": "فندق",
-        "image": "/assets/img/categories/hazelnuts.jpg"
+        "image": "/assets/img/categories/hazelnuts.png"
     },
     {
         "id": 9,
         "name": "کنجد",
-        "image": "/assets/img/categories/sesame.jpg"
+        "image": "/assets/img/categories/sesame.png"
     },
     {
         "id": 10,
         "name": "آرد بادام",
-        "image": "/assets/img/categories/almond_flour.jpg"
+        "image": "/assets/img/categories/almond_flour.png"
     },
     {
         "id": 11,
         "name": "آجیل مخلوط",
-        "image": "/assets/img/categories/mixed_nuts.jpg"
+        "image": "/assets/img/categories/mixed_nuts.png"
     },
     {
         "id": 12,
         "name": "شیره خرما",
-        "image": "/assets/img/categories/date_syrup.jpg"
+        "image": "/assets/img/categories/date_syrup.png"
     },
     {
         "id": 13,
         "name": "پودر کاکائو",
-        "image": "/assets/img/categories/cocoa_powder.jpg"
+        "image": "/assets/img/categories/cocoa_powder.png"
     },
     {
         "id": 14,
         "name": "روغن کنجد",
-        "image": "/assets/img/categories/sesame_oil.jpg"
+        "image": "/assets/img/categories/sesame_oil.png"
     },
     {
         "id": 15,
         "name": "روغن زیتون",
-        "image": "/assets/img/categories/olive_oil.jpg"
+        "image": "/assets/img/categories/olive_oil.png"
     },
     {
         "id": 16,
         "name": "روغن بادام",
-        "image": "/assets/img/categories/almond_oil.jpg"
+        "image": "/assets/img/categories/almond_oil.png"
     },
     {
         "id": 17,
         "name": "شیرین کننده‌ها",
-        "image": "/assets/img/categories/sweeteners.jpg"
+        "image": "/assets/img/categories/sweeteners.png"
     },
     {
         "id": 18,
         "name": "ادویه‌ها",
-        "image": "/assets/img/categories/spices.jpg"
+        "image": "/assets/img/categories/spices.png"
     },
     {
         "id": 19,
         "name": "مرباها",
-        "image": "/assets/img/categories/jams.jpg"
+        "image": "/assets/img/categories/jams.png"
     },
     {
         "id": 20,
         "name": "چای و دمنوش",
-        "image": "/assets/img/categories/tea_and_herbal.jpg"
+        "image": "/assets/img/categories/tea_and_herbal.png"
     }
 ]
