@@ -98,5 +98,11 @@
         "id": 20,
         "name": "چای و دمنوش",
         "image": "/assets/img/categories/tea_and_herbal.png"
+    },
+    {
+        "id": 21,
+        "name": "سنجد",
+        "image": "/assets/img/categories/senjed.png"
     }
+
 ]
