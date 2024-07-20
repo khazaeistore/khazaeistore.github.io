@@ -2,19 +2,20 @@
     {
         "id": 1,
         "category_id": 1,
-        "image": "/assets/img/products/peste.jpg",
-        "title": "پسته",
-        "description": "پسته تازه و خوشمزه",
+        "image": "/assets/img/products/Rice 2.png",
+        "title": "برنج",
+        "description": " برنج هاشمی درجه یک",
         "price": 200000,
+        "Weight": "10 کیلویی",
         "quantity": 50
     },
     {
         "id": 2,
-        "category_id": 2,
-        "image": "/assets/img/products/badam.jpg",
-        "title": "بادام",
-        "description": "بادام مرغوب",
-        "price": 150000,
+        "category_id": 1,
+        "image": "/assets/img/products/Rice 2.png",
+        "title": "برنج ",
+        "description": "برنج طارم",
+        "price":  150000,
         "quantity": 100
     }
     ,
@@ -211,11 +212,11 @@
     ,
     {
         "id": 3,
-        "category_id": 2,
+        "category_id": 21,
         "image": "/assets/img/products/badam.jpg",
-        "title": "بادام",
-        "description": "بادام مرغوب",
-        "price": 150000,
+        "title": "سنجد درجه یک",
+        "description": "سنجد باغ خومون",
+        "price": 20,
         "quantity": 100
     }
     ,
