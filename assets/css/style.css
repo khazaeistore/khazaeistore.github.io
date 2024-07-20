@@ -1154,6 +1154,12 @@ body {
   overflow: hidden;
 }
 
+#search-results-content, #product-list{
+  max-width: 1200px !important;
+  text-align: center;
+  margin: auto;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
