@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "name": "خشکبار",
-        "image": "/assets/img/categories/dried_fruits.png"
+        "name": "برنج",
+        "image": "/assets/img/categories/Rice 1.png"
     },
     {
         "id": 2,
         "name": "آجیل",
-        "image": "/assets/img/categories/nuts.png"
+        "image": "/assets/img/categories/Nuts 1.png"
     },
     {
         "id": 3,
-        "name": "برنج",
-        "image": "/assets/img/categories/rice.png"
+        "name": "محصولات محلی",
+        "image": "/assets/img/categories/Mahali 1.png"
     },
     {
         "id": 4,
-        "name": "کشمش",
+        "name": " کشمش و مویز",
         "image": "/assets/img/categories/raisins.png"
     },
     {
@@ -41,68 +41,38 @@
     },
     {
         "id": 9,
-        "name": "کنجد",
-        "image": "/assets/img/categories/sesame.png"
+        "name": "انواع شکلات",
+        "image": "/assets/img/categories/shokolat.jpg"
     },
     {
         "id": 10,
-        "name": "آرد بادام",
-        "image": "/assets/img/categories/almond_flour.png"
+        "name": "تخمه",
+        "image": "/assets/img/categories/tokhmeh.jpg"
     },
     {
         "id": 11,
-        "name": "آجیل مخلوط",
-        "image": "/assets/img/categories/mixed_nuts.png"
+        "name": "عسل",
+        "image": "/assets/img/categories/asal.jpg"
     },
     {
         "id": 12,
-        "name": "شیره خرما",
-        "image": "/assets/img/categories/date_syrup.png"
+        "name": "شیره انگور",
+        "image": "/assets/img/categories/shireh.jpg"
     },
     {
         "id": 13,
-        "name": "پودر کاکائو",
-        "image": "/assets/img/categories/cocoa_powder.png"
+        "name": "زعفران",
+        "image": "/assets/img/categories/zaferan.jpg"
     },
     {
         "id": 14,
-        "name": "روغن کنجد",
-        "image": "/assets/img/categories/sesame_oil.png"
+        "name": "چای و دمنوش",
+        "image": "/assets/img/categories/chai.jpg"
     },
     {
         "id": 15,
-        "name": "روغن زیتون",
-        "image": "/assets/img/categories/olive_oil.png"
-    },
-    {
-        "id": 16,
-        "name": "روغن بادام",
-        "image": "/assets/img/categories/almond_oil.png"
-    },
-    {
-        "id": 17,
-        "name": "شیرین کننده‌ها",
-        "image": "/assets/img/categories/sweeteners.png"
-    },
-    {
-        "id": 18,
-        "name": "ادویه‌ها",
-        "image": "/assets/img/categories/spices.png"
-    },
-    {
-        "id": 19,
-        "name": "مرباها",
-        "image": "/assets/img/categories/jams.png"
-    },
-    {
-        "id": 20,
-        "name": "چای و دمنوش",
-        "image": "/assets/img/categories/tea_and_herbal.png"
-    },
-    {
-        "id": 21,
-        "name": "سنجد",
-        "image": "/assets/img/categories/senjed.png"
+        "name": "انجیر",
+        "image": "/assets/img/categories/anjeer.jpg"
     }
 
 ]
