@@ -1,13 +1,13 @@
-const timeline = gsap.timeline({
-  onComplete: () => {
-    document.body.classList.remove("hide-scrollbar");
-  }
-});
+// const timeline = gsap.timeline({
+//   onComplete: () => {
+//     document.body.classList.remove("hide-scrollbar");
+//   }
+// });
 
-timeline
-  .from("header", { duration: 1, y: -100, opacity: 0, ease: "bounce" })
-  .from("#hero", { duration: 1, x: -100, opacity: 0, delay: 0.1, ease: "power2.out" })
-  .from("#categories-container", { duration: 1, x: 100, opacity: 0, delay: 0.2, ease: "power2.out" });
+// timeline
+//   .from("header", { duration: 1, y: -100, opacity: 0, ease: "bounce" })
+//   .from("#hero", { duration: 0.3, x: -100, opacity: 0, delay:0, ease: "power2.out" })
+//   .from("#categories-container", { duration: 0.3, x: 100, opacity: 0, delay: 0.1, ease: "power2.out" });
 
 
 // const themeToggle = document.getElementById("theme-toggle");
