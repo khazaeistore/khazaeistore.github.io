@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "برنج",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 2,
+    "name": "آجیل",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 3,
+    "name": "محصولات محلی",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 4,
+    "name": "کشمش و مویز",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 5,
+    "name": "پسته",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 6,
+    "name": "بادام",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 7,
+    "name": "گردو",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 8,
+    "name": "فندق",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 9,
+    "name": "انواع شکلات",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 10,
+    "name": "تخمه",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 11,
+    "name": "عسل",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 12,
+    "name": "شیره انگور",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 13,
+    "name": "زعفران",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 14,
+    "name": "چای و دمنوش",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 15,
+    "name": "انجیر",
+    "image": "category/cat.jpg"
+  }
+]

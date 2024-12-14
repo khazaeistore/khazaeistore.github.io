@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Rice",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Nuts",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Local Products",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Raisins and Currants",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pistachio",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Almond",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Walnut",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Hazelnut",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Various Chocolates",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Seeds",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Honey",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Grape Molasses",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Saffron",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Tea and Herbal Drinks",
+    "image": "category/cat.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Fig",
+    "image": "category/cat.jpg"
+  }
+]

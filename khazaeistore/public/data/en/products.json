@@ -1,0 +1,138 @@
+[
+  {
+    "id": 101,
+    "categoryId": 1,
+    "name": "Tarom Hashemi Rice",
+    "description": "Premium Tarom Hashemi rice from northern Iran",
+    "price": "180000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 102,
+    "categoryId": 1,
+    "name": "Smoked Rice",
+    "description": "Smoked rice with a unique aroma and taste",
+    "price": "200000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 103,
+    "categoryId": 2,
+    "name": "Mixed Nuts",
+    "description": "A blend of the finest Iranian nuts",
+    "price": "350000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 104,
+    "categoryId": 2,
+    "name": "Sweet Nuts",
+    "description": "Sweet nuts with fresh and delicious kernels",
+    "price": "320000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 105,
+    "categoryId": 3,
+    "name": "Local Pomegranate Paste",
+    "description": "Natural pomegranate paste from hand-picked pomegranates",
+    "price": "250000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 106,
+    "categoryId": 4,
+    "name": "Green Raisins",
+    "description": "Grade A green raisins",
+    "price": "120000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 107,
+    "categoryId": 5,
+    "name": "Akbari Pistachio",
+    "description": "Akbari pistachio with excellent taste and freshness",
+    "price": "450000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 108,
+    "categoryId": 6,
+    "name": "Raw Almond",
+    "description": "Fresh and raw almonds",
+    "price": "400000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 109,
+    "categoryId": 7,
+    "name": "Walnut in Shell",
+    "description": "Walnuts in shell from Iranian orchards",
+    "price": "300000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 110,
+    "categoryId": 8,
+    "name": "Raw Hazelnut",
+    "description": "Fresh and raw hazelnuts",
+    "price": "380000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 111,
+    "categoryId": 9,
+    "name": "Dark Chocolate",
+    "description": "Dark chocolate with high cocoa content",
+    "price": "90000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 112,
+    "categoryId": 10,
+    "name": "Sunflower Seeds",
+    "description": "Fresh and salted sunflower seeds",
+    "price": "110000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 113,
+    "categoryId": 11,
+    "name": "Natural Honey",
+    "description": "Natural mountain honey",
+    "price": "180000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 114,
+    "categoryId": 12,
+    "name": "Traditional Grape Molasses",
+    "description": "Pure traditional grape molasses",
+    "price": "150000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 115,
+    "categoryId": 13,
+    "name": "Premium Saffron",
+    "description": "Grade A Iranian saffron",
+    "price": "750000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 116,
+    "categoryId": 14,
+    "name": "Iranian Tea",
+    "description": "Natural flavored Iranian tea",
+    "price": "60000",
+    "image": "product/prod.jpg"
+  },
+  {
+    "id": 117,
+    "categoryId": 15,
+    "name": "Dried Fig",
+    "description": "Fresh and high-quality dried figs",
+    "price": "140000",
+    "image": "product/prod.jpg"
+  }
+]
