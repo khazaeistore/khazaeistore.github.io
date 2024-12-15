@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-vazir overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-thumb-rounded-lg scrollbar-track-gray-300 dark:scrollbar-thumb-gray-700 dark:scrollbar-track-gray-800 hide-scrollbar">
@@ -18,34 +19,30 @@
                 <img src="assets/img/khazaeistore-logo.png" alt="فروشگاه خزائی" class="h-16 ml-4" />
             </a>
             <h1 class="text-2xl font-bold text-gray-800 dark:text-white hidden md:block">
-                فروشگاه خزائی 🛒
+                فروشگاه خزائی
             </h1>
         </div>
         <div class="relative w-1/2 md:w-1/3 lg:w-1/4">
-            <input id="search-input" type="text" placeholder="جستجو... 🔍"
+            <input id="search-input" type="text" placeholder="جستجو..."
                 class="w-full p-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 outline-none border border-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 transition" />
             <div id="search-dropdown" class="hidden absolute left-0 w-full mt-1 bg-white dark:bg-gray-800 rounded shadow-lg"></div>
         </div>
         <nav class="hidden md:flex items-center space-x-4 space-x-reverse">
-            <a href="/contact.html" class="hover:underline text-gray-800 dark:text-white">تماس با ما 📞</a>
-
-            <!-- <button id="theme-toggle" class="bg-gray-300 dark:bg-gray-700 p-2 rounded text-gray-800 dark:text-white">
-                تغییر تم 🌙
-            </button> -->
+            <a href="/contact.html" class="hover:underline text-gray-800 dark:text-white"><i class="fas fa-phone"></i> تماس با ما</a>
+            <button id="theme-toggle" class="bg-gray-300 dark:bg-gray-700 p-2 rounded text-gray-800 dark:text-white">
+                تغییر تم
+            </button>
         </nav>
         <button id="menu-toggle" class="md:hidden p-2 rounded bg-gray-300 dark:bg-gray-700">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
+            <i class="fas fa-bars"></i>
         </button>
     </header>
 
     <nav id="mobile-menu" class="md:hidden hidden flex-col space-y-2 p-4 bg-gray-200 dark:bg-gray-700">
-        <a href="#" class="hover:underline text-gray-800 dark:text-white">تماس با ما 📞</a>
-
-        <!-- <button id="mobile-theme-toggle" class="bg-gray-300 dark:bg-gray-700 p-2 rounded text-gray-800 dark:text-white">
-            تغییر تم 🌙
-        </button> -->
+        <a href="#" class="hover:underline text-gray-800 dark:text-white"><i class="fas fa-phone"></i> تماس با ما</a>
+        <button id="mobile-theme-toggle" class="bg-gray-300 dark:bg-gray-700 p-2 rounded text-gray-800 dark:text-white">
+            تغییر تم
+        </button>
     </nav>
 
     <main class="p-8">
@@ -59,10 +56,10 @@
         </section>
         <section id="search-results" class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-8 hidden">
             <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">
-                نتایج جستجو 🔍
+                نتایج جستجو
             </h3>
             <button id="close-search-results" class="bg-red-500 dark:bg-red-700 text-white p-2 rounded mb-4">
-                بستن ✖️
+                بستن
             </button>
             <div id="search-results-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </section>
@@ -78,6 +75,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
 </body>
 
 </html>
