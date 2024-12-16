@@ -1,6 +1,5 @@
-const themeToggle = document.getElementById("theme-toggle");
-const mobileThemeToggle = document.getElementById("mobile-theme-toggle");
-
+const themeToggleButton = document.getElementById("theme-toggle");
+const mobileThemeToggleButton = document.getElementById("mobile-theme-toggle");
 
 const toggleTheme = () => {
   document.body.classList.toggle("dark");
@@ -17,8 +16,8 @@ const toggleTheme = () => {
   document.body.style.backgroundColor = document.body.classList.contains("dark") ? "#1a202c" : "#f7fafc";
 };
 
-themeToggle.addEventListener("click", toggleTheme);
-mobileThemeToggle.addEventListener("click", toggleTheme);
+themeToggleButton.addEventListener("click", toggleTheme);
+mobileThemeToggleButton.addEventListener("click", toggleTheme);
 
 if (localStorage.getItem("theme") === "dark") {
   document.body.classList.add("dark");
