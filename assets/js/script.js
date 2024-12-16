@@ -66,7 +66,6 @@ fetch("/assets/data/categories.json")
       categoriesContainer.appendChild(categoryDiv);
     });
 
-    // Automatically load the first category
     loadProductsByCategory(firstCategoryId);
   });
 
