@@ -54,6 +54,7 @@ html,
   /* 6 */
   -webkit-tap-highlight-color: transparent;
   /* 7 */
+  overflow-y: auto;
 }
 
 /*
@@ -641,10 +642,6 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
 
-* {
-  scrollbar-color: initial;
-  scrollbar-width: initial;
-}
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -1021,83 +1018,79 @@ select {
   transition-duration: 150ms;
 }
 
-.scrollbar-thin::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-track);
-  border-radius: var(--scrollbar-track-radius);
+/* Remove all previous scrollbar styles and replace with these */
+:root {
+  --scrollbar-track: #f3f4f6;
+  --scrollbar-thumb: #94a3b8;
+  --scrollbar-thumb-hover: #64748b;
 }
 
-.scrollbar-thin::-webkit-scrollbar-track:hover {
-  background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+.dark {
+  --scrollbar-track: #1f2937;
+  --scrollbar-thumb: #4b5563;
+  --scrollbar-thumb-hover: #6b7280;
 }
 
-.scrollbar-thin::-webkit-scrollbar-track:active {
-  background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+/* Main scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-.scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb);
-  border-radius: var(--scrollbar-thumb-radius);
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 5px;
 }
 
-.scrollbar-thin::-webkit-scrollbar-thumb:hover {
-  background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 5px;
 }
 
-.scrollbar-thin::-webkit-scrollbar-thumb:active {
-  background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
 }
 
-.scrollbar-thin::-webkit-scrollbar-corner {
-  background-color: var(--scrollbar-corner);
-  border-radius: var(--scrollbar-corner-radius);
-}
-
-.scrollbar-thin::-webkit-scrollbar-corner:hover {
-  background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
-}
-
-.scrollbar-thin::-webkit-scrollbar-corner:active {
-  background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
-}
-
-.scrollbar-thin {
+/* Firefox */
+* {
   scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
-.scrollbar-thin::-webkit-scrollbar {
-  display: block;
-  width: 8px;
-  height: 8px;
+/* Apply scrollbar styles to all scrollable elements */
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
-.scrollbar-track-gray-300 {
-  --scrollbar-track: #d1d5db !important;
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-.scrollbar-thumb-gray-500 {
-  --scrollbar-thumb: #6b7280 !important;
+.scrollbar::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Categories container scrollbar */
+.categories-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 body {
   font-family: 'Vazirmatn', sans-serif;
   direction: rtl;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6b7280;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #4b5563;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #f3f4f6;
 }
 
 .categories-container {
@@ -1107,10 +1100,11 @@ body {
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
+  -ms-overflow-style: none; /* for Internet Explorer and Edge */
 }
 
 .categories-container::-webkit-scrollbar {
-  height: 5px;
+  height: 8px;
 }
 
 .categories-container::-webkit-scrollbar-thumb {
